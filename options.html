@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PuzzleFree Button Settings</title>
+  <style>
+    body{font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:18px;max-width:760px}
+    h1{font-size:18px;margin:0 0 10px 0}
+    .card{border:1px solid #e6e8eb;border-radius:14px;padding:14px;margin:12px 0}
+    label{display:block;font-weight:600;margin-bottom:6px}
+    select{width:100%;padding:10px;border-radius:10px;border:1px solid #d0d7de}
+    .note{color:#555;font-size:12px;margin-top:6px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:640px){.row{grid-template-columns:1fr}}
+    .ok{color:#0a7d2f;font-weight:700}
+  </style>
+</head>
+<body>
+  <h1>PuzzleFree Button — Settings</h1>
+  <div class="card">
+    <div class="row">
+      <div>
+        <label for="defaultTarget">Default page</label>
+        <select id="defaultTarget">
+          <option value="home">Home (puzzlefree.game)</option>
+          <option value="daily">Daily Puzzle</option>
+          <option value="all">All Puzzles</option>
+          <option value="categories">Categories</option>
+          <option value="tags">Tags</option>
+        </select>
+        <div class="note">This is what “Open PuzzleFree” uses in the popup.</div>
+      </div>
+      <div>
+        <label for="openMode">Open mode</label>
+        <select id="openMode">
+          <option value="newtab">Open in a new tab</option>
+          <option value="currenttab">Open in the current tab</option>
+        </select>
+        <div class="note">Choose how links open when you use the extension.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="note">
+      Privacy: this extension does not collect or transmit personal data. Settings are stored locally using the browser’s sync storage.
+    </div>
+  </div>
+
+  <div id="status" class="note"></div>
+
+<script src="options.js"></script>
+</body>
+</html>

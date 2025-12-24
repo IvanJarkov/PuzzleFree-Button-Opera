@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "PuzzleFree Button",
+  "version": "1.2.0",
+  "description": "Quick access to PuzzleFree.Game from your Opera toolbar and right‑click menu.",
+  "action": {
+    "default_title": "PuzzleFree Button",
+    "default_icon": {
+      "16": "icon-16.png",
+      "32": "icon-32.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "options_page": "options.html",
+  "homepage_url": "https://puzzlefree.game/"
+}
