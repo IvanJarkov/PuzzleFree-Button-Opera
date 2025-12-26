@@ -21,3 +21,6 @@ This extension does not require a build process.
    - background/service worker script
    - icon files
 3. Upload the ZIP archive to the Opera Add-ons dashboard
+
+## Addon
+(comming soon)
